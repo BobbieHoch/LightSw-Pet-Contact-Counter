@@ -4,17 +4,19 @@ import "../css/UpDownCounter.css"
 
 
 
-export function UpDownCounter() {
+export function Counters() {
     let[isUp, setIsUp] =useState(0);
     const [isDown, setIsDown] = useState(0);
-
-
+    const [counter, setCounter] = useState(0);
+//counter = 0 e.onClick for each button
     return (
     
         <div className="Counter">
-            <button>Up</button>
-     
-            <button>Down</button>
+{counter}
+
+            <button onClick = {() => setCounter(counter +1)}>Up</button>
+
+            <button onClick={() => setCounter(counter - 1)}>Down</button>
 
         </div>
 

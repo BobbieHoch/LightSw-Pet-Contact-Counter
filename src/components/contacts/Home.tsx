@@ -10,7 +10,7 @@ function Home() {
     );    
 
     function addContact(contact: Contact) {
-        setContacts([....contacts, contact]);
+        setContacts([...contacts, contact]);
     }
     return (
         <div className="Home">

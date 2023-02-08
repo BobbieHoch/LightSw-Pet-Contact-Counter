@@ -8,7 +8,7 @@ export function PetInfo() {
     return (
         <div className="PetInfo">
          
-            <img src={pet.image}></img>
+            <img src={pet.image} alt = "Rover"></img>
             <p>{pet.name}</p>
             <p>{pet.breed}</p>
 
